@@ -11,12 +11,14 @@ The original code is [here](https://github.com/lontivero/Wiki/blob/master/src/wa
 3. Start Wasabi with json RPC server on. https://docs.wasabiwallet.io/using-wasabi/RPC.html#configure-rpc
 3. Run the following commands. 
 
-./wcli.sh selectwallet <wallet-name>
+If your windows username is not 'user' then edit wcli.sh line 4 according to that. 
 
-delete coinlist.txt otherwise the next command will append.
+`./wcli.sh selectwallet <wallet-name>`
 
-./wcli.sh listcoins > coinlist.txt
+`rm coinlist.txt`
 
-cat coinlist.txt | dotnet fsi coinsgraph.fsx | sed -e 's/    ;//' | dot -Tpng > mywallet.png
+`./wcli.sh listcoins > coinlist.txt`
+
+`cat coinlist.txt | dotnet fsi coinsgraph.fsx | sed -e 's/    ;//' | dot -Tpng > mywallet.png`
 
 the PNG will contain all the transactions and coins for the specified wallet. 
