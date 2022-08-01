@@ -6,7 +6,7 @@ The original code is [here](https://github.com/lontivero/Wiki/blob/master/src/wa
 
 ## Steps 
 
-1. Checkout this repository.
+1. Clone this repository.
 2. Start WSL. 
 3. Start Wasabi with json RPC server on. https://docs.wasabiwallet.io/using-wasabi/RPC.html#configure-rpc
 3. Run the following commands. 
