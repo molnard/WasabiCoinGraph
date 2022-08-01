@@ -11,6 +11,8 @@ The original code is [here](https://github.com/lontivero/Wiki/blob/master/src/wa
 3. Start Wasabi with json RPC server on. https://docs.wasabiwallet.io/using-wasabi/RPC.html#configure-rpc
 3. Run the following commands. 
 
+If your windows username is not 'user' then edit wcli.sh line 4 according to that. 
+
 ./wcli.sh selectwallet <wallet-name>
 
 delete coinlist.txt otherwise the next command will append.
