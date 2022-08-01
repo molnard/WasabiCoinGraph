@@ -13,12 +13,12 @@ The original code is [here](https://github.com/lontivero/Wiki/blob/master/src/wa
 
 If your windows username is not 'user' then edit wcli.sh line 4 according to that. 
 
-./wcli.sh selectwallet <wallet-name>
+`./wcli.sh selectwallet <wallet-name>`
 
-delete coinlist.txt otherwise the next command will append.
+`rm coinlist.txt`
 
-./wcli.sh listcoins > coinlist.txt
+`./wcli.sh listcoins > coinlist.txt`
 
-cat coinlist.txt | dotnet fsi coinsgraph.fsx | sed -e 's/    ;//' | dot -Tpng > mywallet.png
+`cat coinlist.txt | dotnet fsi coinsgraph.fsx | sed -e 's/    ;//' | dot -Tpng > mywallet.png`
 
 the PNG will contain all the transactions and coins for the specified wallet. 
