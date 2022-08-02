@@ -3,7 +3,7 @@
 ###############################################################################
 * text=auto
 **/osx64/Tor/tor text eol=lf
-*.sh text eol=lf   # linux line-endings
+*.sh text eol=lf
 
 ###############################################################################
 # Set default behavior for command prompt diff.
